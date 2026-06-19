@@ -33,6 +33,8 @@ meshlab = ["pymeshlab"]
 lint = ["ruff==0.9.10"]
 
 [tool.setuptools.packages.find]
-where = ["cube3d"]
-include = ["cube/*"]
-namespaces = false
+where = ["."]
+include = ["cube3d*"]
+
+[tool.setuptools.package-data]
+cube3d = ["configs/*.yaml"]
